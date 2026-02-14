@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.cv {
+  border: 1px solid #000;
+  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+ 
+.avatar {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#454545', GradientType=0);
+  height: 300px;
+  text-align: center;
+}
+ 
+.avatar img {
+  padding: 5px;
+  border-radius: 50%;
+  margin-top: 25px;
+  background: #fff;
+  max-width:300px;
+}
+ 
+.gray {
+  background: #454545;
+}
+ 
+.bio {
+  background: #b212d2;
+  color: #fff;
+}
+ 
+.bio hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+ 
+.about h3,
+.contact h3 {
+  background-color: #a54876;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.4em;
+  margin: 0 0 24px 26px;
+  padding: 4px 0 4px 12px;
+  position: relative;
+  width: 100%;
+}
+ 
+.about h3:after,
+.contact h3:after {
+  border-color: #263746 transparent transparent #263746;
+  border-style: solid;
+  border-width: 6px;
+  bottom: -12px;
+  content: "";
+  position: absolute;
+  right: 0;
+}
+ 
+.about h3:before,
+.contact h3:before {
+  color: #fff;
+  content: "";
+  font: 26px sans-serif;
+  position: absolute;
+  right: 12px;
+  top: -2px;
+}
+ 
+.contact {
+  font-size: 1.2em;
+}
+ 
+.circle {
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+ 
+.experience .glyphicon,
+.education .glyphicon,
+.work-skills .glyphicon,
+.personal-skills .glyphicon {
+  font-size: 1.5em;
+}
+ 
+.experience hr,
+.education hr,
+.work-skills hr,
+.personal-skills hr {
+  border-top: 1px dashed #000;
+}
+ 
+.experience .date,
+.education .date,
+.work-skills .date,
+,
+.personal-skills .date {
+  font-size: 1em;
+}
+ 
+.experience .title,
+.education .title,
+.work-skills .title,
+.personal-skills .title {
+  color: #9f2f83;
+  font-weight: bold;
+}
+ 
+.skills dt {
+  margin: 0;
+  padding: 1rem 0;
+  font-family: 'VT323', ;
+  font-size: 24px;
+  color: #3D3D3D;
+}
+ 
+.skills dt:first-child {
+  padding-top: 0;
+}
+ 
+.skills dt:after {
+  width: 100%;
+  background-color: #3D3D3D;
+  height: 0.5rem;
+  content: "";
+  display: block;
+}
+ 
+.skills dd {
+  width: 100%;
+  height: 0.5rem;
+  position: relative;
+  right: 0;
+  margin: -1.5rem 0 0;
+  overflow: hidden;
+  text-indent: -1000px;
+}
+ 
+.skills dd {
+  background-color: #4886a5;
+}
+ 
+body {
+  padding: 40px 0;
+}
+ 
+@media (max-width: 768px) {
+.mobile-no-pad {
+  padding-left:0!important;
+  padding-right:0!important;
+}
+  body {padding: 0;}
+  
+  .about h3,
+.contact h3 {
+  margin: 0 0 10px 0;
+  padding: 4px 0 4px 12px;
+}
+  .about h3:after,
+.contact h3:after {
+  display:none;
+}
+  
+ .about h3:before,
+.contact h3:before {
+  right: 0;
+  top: -2px;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="container cv pad-t-40 no-pad-lr">
+  
+  <!-- Left Column -->
+  <div class="col-md-4 matchHeight no-pad-lr gray"> 
+    <div class="col-md-12 avatar">
+      <img src="https://www.w3schools.com/howto/img_avatar.png">
+    </div>
+    <div class="col-md-12 bio pad-b-20">
+      <div class="center">
+        <h1 class="name">Rebecca Morin</h1>
+        <hr>
+        <h2>Web Developer</h2>
+      </div>
+      <div class="about m-t-50">
+        <h3>About</h3>
+        <div class="pad-l-30">
+            <p> Currently worked 11 years as a Occaptional Therapist Assistant</p>
+          <p>Graduated from a Software Bootcamp from UTSA</p>
+          <p> </p>
+        </div>
+      </div>
+      <div class="contact m-t-30">
+        <h3>Contact</h3>
+        <div class="pad-l-30">
+        <p></span> (555) 123-4567</p>
+          
+        <p class="m-t-20"></span> 1920 Madison<br><span class="m-l-50"></span> New Branufels, Texas</span></p>
+          
+        <p class="m-t-20"></span> rebecca_morin@yahoo.com</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Left Column -->
+  
+  <!-- Right Column -->
+  <div class="col-md-8 matchHeight no-pad-r">
+    
+    <!-- Start Experience -->
+    <div class="col-md-12 m-t-20">
+      <div class="experience">
+        <p><span class="glyphicon glyphicon-briefcase"></span><span class="h3"> EXPERIENCE</span></p>
+        <hr>
+        <!-- Row 1 -->
+        <div class="row m-b-10"> 
+          <div class="col-md-4">
+            <p class="date"><b>Franklin Park</b><br><i>Feb 2025 - June 2026</i></p>
+          </div>
+          <div class="col-md-7 col-md-offset-1">
+            <p class="title">Certified Occaptional Therapist Assistant</p>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row m-b-10">
+          <div class="col-md-4">
+            <p class="date"><b>Apple</b><br><i>Jun 2014 - Mar 2015</i></p>
+          </div>
+          <div class="col-md-7 col-md-offset-1">
+            <p class="title">Web Developer</p>
+            <p></p>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row m-b-10">
+          <div class="col-md-4">
+            
+      </div>
+    </div>
+    <!-- End Experience -->
+    
+    <!-- Start Education -->
+    <div class="col-md-12">
+      <div class="education">
+        <p><span class="glyphicon glyphicon-education"></span><span class="h3"> EDUCATION</span></p>
+        <hr>
+        <!-- Row 1 -->
+       
+          <div class="col-md-7 col-md-offset-1">
+            <p class="title">Martin High School</p>
+            <p>Graduated 2010</p>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row m-b-10">
+          
+          <div class="col-md-7 col-md-offset-1">
+            <p class="title">St.Philip's Collage</p>
+            <p>Graduated 2015</p>
+           
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <!-- End Education -->
+    
+    <!-- Start Work Skills -->
+    <div class="col-md-12">
+      <div class="work-skills">
+        <p><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span><span class="h3"> Work Skills</span></p>
+        <hr>
+       <!-- Start Skills Left -->
+        <div class="col-md-6 no-pad-l">
+          <dl class="skills">
+            <dt>Adapt to unforseen obstacles</dt>
+            <dd>90</dd>
+            <dt>Time management skills</dt>
+            <dd>86</dd>
+          </dl>
+        </div>
+        <!-- End Skills -->
+ 
+        <!-- Start Skills Right -->
+        <div class="col-md-6 no-pad-r mobile-no-pad">
+          <dl class="skills">
+            <dt>Able to work within a team</dt>
+            <dd>56</dd>
+          </dl>
+        </div>
+        <!-- End Skills -->
+      </div>
+    </div>
+    <!-- End Work Skills -->
+
+</body>
+</html>
