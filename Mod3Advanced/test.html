@@ -1,0 +1,27 @@
+<html>
+
+<body>
+
+<h2>Check the Dev Inspector Console</h2>
+
+ 
+
+<script>
+
+fetch('https://reqres.in/api/users') // request data from this server
+
+    // when it completes, access the JSON from the HTTP response sent by the resolved promise
+
+    .then(response => response.json()) // .json() also returns a promise
+
+    .then(json => console.log(json))   // log the returned JSON
+
+    .catch(error => console.error(error)) // log errors
+
+</script>
+
+ 
+
+</body>
+
+</html>
