@@ -1,0 +1,182 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<template id="card-template">
+<div class="col-lg-3 col-md-6 col-sm-12">
+<div class="card">
+<div class="card-header">Header</div>
+<img src="..." class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Card title</h5>
+<h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+<p class="card-text">Product description</p>
+<a href="#" class="btn btn-primary">Read More</a>
+</div>
+</div>
+</div>
+</template>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fake eCommerce Store</title>
+</head>
+<body>
+<div class="container p-3">
+<h2>Fake eCommerce Store</h2>
+ <div class="filters">
+        <select name="category_filter" id="category_filter" onchange="filterProducts(event)">
+            <option>All Products</option>
+        </select>
+        <div id="sort">
+            <label>Sort By:
+                <select name="sort_order" id="sort_order" onchange="sortProducts(event)">
+                    <option value="id">Default ordering</option>
+                    <option value="price_lohi">Price (low to high)</option>
+                    <option value="price_hilo">Price (high to low)</option>
+                    <option value="title_az">Title (A to Z)</option>
+                    <option value="title_za">Title (Z to A)</option>
+                </select>
+            </label>
+        </div>
+        <div id="search">
+            <input name="searchText" id="searchText">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+    </div>
+    <div id="product-list"></div>
+</div>
+<script>
+    let categories = new Map();
+    let allProducts;
+    // STEP 1:Get the product data from: 
+    fetch('https://fakestoreapi.com/products')
+.then((response) => response.json())
+.then((json) => {
+console.log(json)
+// use this JSON to find and set correct option data for the chart
+})
+.then(() => {
+// Display the chart
+myProduncts.setOption(options);
+})
+// Initialize the echarts instance based on the prepared div
+let myProduct = eproducts.init(document.getElementById('main'));
+    // Hint:
+    // Use axios.get(...) or fetch(...)
+    // Save the returned data into allProducts
+    // Then call:
+    // - loadProducts(...)
+    // - loadFilterOptions()
+    function loadProducts(products) {
+        // STEP 2:
+        // Clear out the current product list before reloading
+        // STEP 3:
+        // Loop through each product
+        // STEP 4:
+        // Create a category slug version of the category name
+        // Example:
+        // "men's clothing" -> something CSS-friendly
+        //
+        // Hint:
+        // replace spaces
+        // remove apostrophes
+        // STEP 5:
+        // Store category info in the Map
+        // STEP 6:
+        // Call a function that creates and displays one product card
+        // STEP 7:
+        // If no products exist, show a "No matching products" message
+    }
+    function addProduct(item) {
+        // STEP 8:
+        // Clone the template
+        // STEP 9:
+        // Fill in the card with product data:
+        // - title
+        // - category/header
+        // - price
+        // - image src
+        // - image alt
+        // - shortened description
+        // STEP 10:
+        // Add a CSS class to the card based on the category slug
+        // STEP 11:
+        // Give the card a unique id using the product id
+        // STEP 12:
+        // Add a click event to the button so it expands the full description
+        // STEP 13:
+        // Append the finished card to #product-list
+    }
+    function getCategoryIcon(cat) {
+        // STEP 14:
+        // Return a different icon depending on the category
+        //
+        // Hint:
+        // use switch(cat.toLowerCase())
+        //
+        // Categories include:
+        // - men's clothing
+        // - women's clothing
+        // - jewelery
+        // - electronics
+        //
+        // Add a default fallback too
+    }
+    function loadFilterOptions() {
+        // STEP 15:
+        // Get the category filter dropdown
+        // STEP 16:
+        // Loop through the categories Map
+        // STEP 17:
+        // Add one <option> for each category
+    }
+    function filterProducts(e) {
+        // STEP 18:
+        // Get the selected category from the dropdown
+        // STEP 19:
+        // Filter allProducts so only matching products remain
+        // STEP 20:
+        // Special case:
+        // If "All Products" is selected, show everything
+        // STEP 21:
+        // Reload the products on screen
+    }
+    function sortProducts(e) {
+        // STEP 22:
+        // Get the selected sort option
+        // STEP 23:
+        // Make a copy of allProducts before sorting
+        //
+        // Hint:
+        // Don't sort the original directly if you want to preserve it
+        // STEP 24:
+        // Use a switch statement to sort by:
+        // - price low to high
+        // - price high to low
+        // - title A-Z
+        // - title Z-A
+        // STEP 25:
+        // Reload the sorted products
+    }
+    function searchProducts() {
+        // STEP 26:
+        // Get the text from the search input
+        // Convert it to lowercase
+        // STEP 27:
+        // Filter allProducts by checking whether the search text appears in:
+        // - title
+        // - description
+        // - category
+        // STEP 28:
+        // Reload only the matching products
+    }
+    function expandText(e, productId, fullDescription) {
+        // STEP 29:
+        // Prevent the link/button from jumping the page
+        // STEP 30:
+        // Find the correct card by id
+        // STEP 31:
+        // Replace the shortened description with the full description
+    }
+</script> -->
+
